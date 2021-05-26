@@ -151,6 +151,7 @@ class ContactFormController extends Controller
     {
         //
         $contact = ContactForm::find($id);
+
         $contact->delete();
 
         return redirect('contact/index');
